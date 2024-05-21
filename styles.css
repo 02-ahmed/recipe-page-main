@@ -29,6 +29,8 @@ body {
   justify-content: center;
   /* align-items: center; */
   border-radius: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 
@@ -92,6 +94,15 @@ li {
 
 .instructions ol {
   justify-content: center;
+}
+
+.instructions ol li {
+  text-align: justify;
+  font-size: 15px;
+}
+
+strong {
+  margin: 0;
 }
 
 .instructions li {
