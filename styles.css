@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 0;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(330, 100%, 98%);
+  font-family: "Outfit", serif;
+}
+
+.container {
+  width: 50%;
+  height: 90%;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  border-radius: 10px;
+}
+
+
+
+img {
+  height: 300px;
+  width: 90%;
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  margin-top: 35px;
+  align-self: center;
+}
+
+.main-title {
+  text-align: left;
+  margin-left: 30px;
+  font-size: 35px;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+}
+
+.recipe-description {
+  margin-left: 33px;
+  font-size: 15px;
+}
+
+.prep-time-container {
+  background-color: hsl(330, 100%, 98%);
+  width: 90%;
+  align-self: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.prep-time-container ul {
+  margin-left: 30px;
+}
+
+.prep-title {
+  color: hsl(332, 51%, 32%);
+}
+
+li {
+  padding-left: 10px;
+}
+
+.ingredients-title {
+  margin-left: 30px;
+  color: hsl(14, 45%, 36%);
+  font-size: 30px;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+}
+
+.ingredients ul {
+  margin-left: 50px;
+}
+
+.instructions ol {
+  justify-content: center;
+}
+
+.instructions li {
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+
+.instructions-title {
+  color:hsl(14, 45%, 36%);
+  font-size: 30px;
+  margin-left: 30px;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+}
+
+.instructions ol > li::marker {
+  font-weight: bold;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  margin-left: 35px;
+  column-gap: 80px;
+}
+
+.table div {
+  /* border: 1px solid black; */
+  height: 40px;
+  display: flex;
+  justify-content:left;
+  align-items: center;
+}
+
+.nutrition-title {
+  color: hsl(14, 45%, 36%);
+  font-size: 30px;
+  margin-left: 30px;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+}
+
+.nutrition p {
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.nutrition .table .value {
+  color:hsl(14, 45%, 36%);
+}
+
+.nutrition {
+  display: flex;
+  flex-direction: column;
+}
+
+hr {
+  width: 90%;
+  align-self: center;
+}
+
+
+@media only screen and (max-width: 430px) {
+  .container{
+    width: 300px;
+    margin-left: 30px;
+  }
+
+  img {
+    width: 275px;
+  }
+
+  .value {
+    margin-left: -100px;
+  }
+
+}
